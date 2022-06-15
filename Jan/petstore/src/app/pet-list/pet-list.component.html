@@ -1,0 +1,7 @@
+<h2>Animals</h2>
+
+<div *ngFor="let animals of pets; index as petId">
+    <a routerLink="pets/{{petId}}">{{ animals.name }}</a>
+    <p>{{animals.kind}}</p>
+    <p>{{animals.price}}</p>
+</div>
